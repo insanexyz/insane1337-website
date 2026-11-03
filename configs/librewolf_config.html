@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <article>
+        <section>
+            <h2>## Theming</h2>
+            <ol>
+                <li>Settings -> Appearance -> Allow userChrome.css customization</li>
+                <li>cd ~/.config/librewolf/librewolf/<profile>/chrome</li>
+                <li>touch userChrome.css userContent.css (use browsertoolbox firefox feature to get the ids)</li>
+                <li>For colors we can use https://color.firefox.com/ or we can use userChrome.css</li>
+                <li>pywalfox extension and fetch colors </li>
+            </ol>
+
+            <h4>userChrome.css</h4>
+            <pre>
+                <code>
+#TabsToolbar { display: none !important; }
+#sidebar-panel-header { display: none !important; }
+#sidebar-box { padding-inline-start: 0px !important; }
+
+* { border-radius: 0px !important; }
+                </code>
+            </pre>
+
+            <h4>userContent.css</h4>
+            <pre>
+                <code>
+@-moz-document url-prefix("about:") {
+    /*body {
+       	background-color: #0f0f0f !important;
+       	color: #f4decd !important;
+    }*/
+
+    * {
+       	border-radius: 0px !important;
+    }
+}
+                </code>
+            </pre>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>## Ublock origin settings</h2>
+            <ol>
+                <li>Disable javascript</li>
+                <li>Disable loading remote fonts </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>## Sideberry extension</h2>
+            <ol>
+                <li>Important - Builtin sidebar disabled from librewolf settings.</li>
+                <li>Sideberry settings -> Navigation bar -> Enabled elements -> Add "Tabs Panel" (acts as workspaces) and assign different containers to each workspace.</li>
+                <li>Different containers allows for isolation of browser cookies and other browser data.</li>
+                <li>
+                    Some workspace settings
+                    <img src="../images/sideberry-workspace-setttings.png" alt="">
+                </li>
+                <li>Custom rules can also be added for each container.</li>
+                <li>Under help section we can export our settings using "Export addon data".</li>
+            </ol>
+
+            <h3>### Rules and settings for i2p container</h3>
+            <ol>
+                <li>
+                    Proxy settings
+                    <img src="../images/i2p-container-proxy-settings.png" alt="">
+                </li>
+                <li>
+                    Custom rule so all url that include .i2p opens in i2ps' container from any workspace.
+                    <img src="../images/i2p-container-rules.png" alt="">
+                </li>
+            </ol>
+
+            <h3>### Custom css for sideberry</h3>
+            <ol>
+                <li>Sideberry settings -> Styles editor</li>
+                <li>
+                    Set the following values <br>
+                    - Border radius = 0px <br>
+                    - Margin = 4px <br>
+                </li>
+            </ol>
+
+            <p>
+                <strong>
+                    Note - For more senisitive stuff making seperate profiles or having a different browser alltogehter is also an option.
+                </strong>
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>## Stylus extension - A css injection tool</h2>
+            <pre>
+                <code>
+* {
+    border-radius: 0px !important;
+    font-family: "Iosevka" !important;
+}
+                </code>
+            </pre>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>## Other extensions</h2>
+            <ol>
+                <li>Dark reader for dark mode</li>
+                <li>Volume control - https://addons.mozilla.org/en-US/firefox/addon/volume-control-boost-volume/</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>## Other things</h2>
+            <ol>
+                <li>Browser profiles :O</li>
+            </ol>
+        </section>
+    </article>
+</body>
+</html>

@@ -1,4 +1,9 @@
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka@5.3.0/index.css');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Iosevka', monospace;
+}
 
 body {
   font-family: 'Iosevka', monospace;
@@ -9,3 +14,36 @@ body {
   margin-left: 25%;
   margin-right: 25%;
 }
+
+hr {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 35x;
+    margin-bottom: 35px;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+article {
+    margin-top: 50px;
+}
+
+/*pre {
+     white-space: pre-line;
+}*/
