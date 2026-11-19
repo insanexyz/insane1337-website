@@ -46,6 +46,14 @@ article {
     margin-bottom: 50px;
 }
 
+a {
+    color: #ffbf00;
+}
+
+a:hover {
+    color: red;
+}
+
 /*pre {
      white-space: pre-line;
 }*/
